@@ -1,3 +1,4 @@
+//12.ClassWithMainClass.java 
 class Lamp {
   
   // stores the value for light

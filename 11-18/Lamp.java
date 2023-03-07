@@ -1,3 +1,4 @@
+//11.ClassExample.java
 class Lamp {
   
   // stores the value for light

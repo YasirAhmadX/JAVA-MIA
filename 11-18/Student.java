@@ -1,4 +1,5 @@
-
+//13.StudentClass.java
+import java.util.Scanner;
 public class Student{      
  
 	 String name;
@@ -14,11 +15,13 @@ public class Student{
 	
 	public static void main(String[] args) {
 		Student student = new Student();
+        Scanner in = new Scanner(System.in);
 		
 		// Accessing and property value
-		student.name = "Ramesh";
-		student.rollno = 253;
-		student.age = 25;
+		student.name = in.next();
+        in.next();
+		student.rollno = in.nextInt();
+		student.age = in.nextInt();
 		
 		// Calling method
 		student.info();
