@@ -1,3 +1,42 @@
 {
-  "files": {}
+  "files": {
+    "PAT_1/PAT1.java": [
+      {
+        "id": "60cff961-2a96-4d6f-baf2-889002eeb283",
+        "line": 8,
+        "version": 1,
+        "index": 142
+      },
+      {
+        "id": "88b931a0-4c73-4f87-be77-34cd12407a97",
+        "line": 15,
+        "version": 1,
+        "index": 289
+      },
+      {
+        "id": "f7677324-ab36-445b-ab1a-f7d3c9e3a43f",
+        "line": 16,
+        "version": 1,
+        "index": 334
+      },
+      {
+        "id": "97ae605d-8208-431f-8605-895d348bd8b7",
+        "line": 17,
+        "version": 1,
+        "index": 373
+      },
+      {
+        "id": "ec2dec79-8cc3-4b6a-8dda-9ec09599ec4b",
+        "line": 18,
+        "version": 1,
+        "index": 412
+      },
+      {
+        "id": "25b419fc-1e94-4828-9852-10bdf084044e",
+        "line": 19,
+        "version": 1,
+        "index": 445
+      }
+    ]
+  }
 }
