@@ -19,11 +19,13 @@ class Game{
         
     }
 
-    public void attack(){
+    public void attack(Game player2){
         System.out.println("Player Attacked Using: "+swordName);
+        player2.playerXp -= piercingDamage;
     }
-    public void parry(){
+    public void parry(Game player1){
         System.out.println("Enemy Parried Using: "+swordName);
+        player1.playerXp -= slashingDamage;
     }
     static void endTheGame(){
         System.out.println("GAME OVER");
@@ -51,11 +53,11 @@ class PAT1{
         player1.setWeaponFeatures();
         player2.setWeaponFeatures();
 
-        player1.attack();
-        player2.playerXp -= player1.piercingDamage;
+        player1.attack(player2);
+        //player2.playerXp -= player1.piercingDamage;
 
-        player2.parry();
-        player1.playerXp -= player2.slashingDamage;
+        player2.parry(player1);
+        //player1.playerXp -= player2.slashingDamage;
 
         Game.endTheGame();
 
