@@ -4,7 +4,7 @@ class Game{
     String swordName;
     int piercingDamage,slashingDamage,playerXp;
 
-    public Game(String s_name){
+    public Game(String s_name){ 
         swordName = s_name;
     }
     static void startTheGame(){
@@ -19,18 +19,18 @@ class Game{
         
     }
 
-    public void attack(Game player2){
+    public void attack(Game opponent){ //instance attacks opponent
         System.out.println("Player Attacked Using: "+swordName);
-        player2.playerXp -= piercingDamage;
+        opponent.playerXp -= piercingDamage;
     }
-    public void parry(Game player1){
+    public void parry(Game opponent){ //instance defends from opponent
         System.out.println("Enemy Parried Using: "+swordName);
-        player1.playerXp -= slashingDamage;
+        opponent.playerXp -= slashingDamage;
     }
-    static void endTheGame(){
+    static void endTheGame(){ 
         System.out.println("GAME OVER");
     }
-    public void gameSummary(){
+    public void gameSummary(){ //print info of instance attributes
         System.out.println("Sword Name : "+swordName);
         System.out.println("Piercing Damage : "+piercingDamage);
         System.out.println("Slashing Damage : "+slashingDamage);
@@ -54,10 +54,8 @@ class PAT1{
         player2.setWeaponFeatures();
 
         player1.attack(player2);
-        //player2.playerXp -= player1.piercingDamage;
-
+        
         player2.parry(player1);
-        //player1.playerXp -= player2.slashingDamage;
 
         Game.endTheGame();
 
